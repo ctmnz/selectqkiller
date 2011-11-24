@@ -8,7 +8,7 @@ config_host=localhost
 config_user=root
 config_pass=
 config_db=test
-config_logfilepath=/root/qkill-dev
+config_logfilepath=/root/selectqkiller
 
 
 
