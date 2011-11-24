@@ -1,0 +1,14 @@
+
+
+[Main]
+config_max_query_time=20
+
+[Mysql user config]
+config_host=localhost
+config_user=root
+config_pass=
+config_db=test
+config_logfilepath=/root/qkill-dev
+
+
+
