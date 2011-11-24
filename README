@@ -1,0 +1,50 @@
+SELECTQKILLER
+--------------------
+Description:
+
+This is a simple program for finding and killing slow mysql select queries produced by your applications.
+Once started, it executes constanlty 'show full processlist' and watches for SELECT queries that are slower than defined time 'config_max_query_time' and kills the slow queries. Killed queries are logged in myslowlogfile.log file.
+
+Who needs this?
+Someone who manages projects that using Linux MySQL.
+
+Easy to install (from linux console)
+
+#> make
+
+
+Easy to configure. It uses ini-like configuration file.
+
+#> vim selectqkiller.cnf
+
+----
+[Main]
+config_max_query_time=20
+
+[Mysql user config]
+config_host=localhost
+config_user=root
+config_pass=
+config_db=test
+config_logfilepath=/root/selectqkiller
+----
+
+
+Easy to use
+
+#> ./selectqkiller
+#>
+
+
+
+
+Easy to remove (from linux console)
+
+#> make clean
+
+
+
+
+
+
+
